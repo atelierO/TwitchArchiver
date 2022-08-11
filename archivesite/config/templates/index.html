@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                background-color: #6b6bff;
+                padding: 8px;
+                color: white;
+                font-weight: bold;
+                font-size: 20pt;
+            }
+            .item{
+                margin: 5px;
+                padding: 5px;
+                border: 3px solid #6b6bff;
+                border-radius: 16px;
+            }
+            #item-prototype{
+                display: none;
+            }
+            #add{
+                width: 99.35%;
+                margin: 4px;
+                /* padding: 0px; */
+                text-align: center;
+                font-size: 30pt;
+                border: 3px solid #6b6bff;
+                border-radius: 16px;
+                background-color: white;
+                color: #6b6bff;
+            }
+            #add:hover{
+                cursor: pointer;
+            }
+            #add:active{
+                background-color: #eeeeff;
+            }
+        </style>
+        <script>
+            counter = 0;
+            function Add()
+            {
+                var item = document.getElementById("item-prototype").cloneNode(true);
+                item.setAttribute("id","item"+counter);
+                var cname = item.querySelector("#cname").setAttribute("id","cname"+counter);
+                var oauth = item.querySelector("#oauth").setAttribute("id","oauth"+counter);
+                var apply = item.querySelector("#apply");
+                apply.value = counter;
+                apply.addEventListener("click", function(event){ 
+                    var n = event.target.value;
+                    document.getElementById("cname"+n).setAttribute("readonly",true);
+                    document.getElementById("oauth"+n).setAttribute("readonly",true);
+                    
+
+                 });
+                document.getElementById("list").appendChild(item);
+                counter++;
+            }
+        </script>
+    </head>
+    <body>
+        <header>Twitch Channel Archiver</header>
+        <section>
+            <div id="list">
+                <div id="item-prototype" class="item">
+                    Channel Name: <input id="cname" type="text">
+                    OAuth : <input id="oauth" type="text">
+                    <button id="apply" style="width:70px;height:20px;">APPLY</button>
+                    <button id="delete" style="width:70px;height:20px;float:right;margin-right:15px;">DELETE</button>
+                    <br>
+                    <span id="info">Last Download Time : 2020-01 Next Download Time : 2020-01-xx Video Downloaded # : 64 STATE : IDLE or Downloading</span>
+                    <button id="show" style="width:70px;height:20px;float:right;margin-right:15px;">list</button>
+                    
+                </div>
+            </div>
+            <button id="add" onclick="Add()">+</button>
+        </section>
+    </body>
+</html>
