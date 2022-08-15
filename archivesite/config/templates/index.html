@@ -1,126 +1,52 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            body{
-                margin: 0;
-                padding: 0;
-            }
-            header{
-                background-color: #6b6bff;
-                padding: 8px;
-                color: white;
-                font-weight: bold;
-                font-size: 20pt;
-            }
-            .item{
-                margin: 5px;
-                padding: 5px;
-                border: 3px solid #6b6bff;
-                border-radius: 16px;
-            }
-            #item-prototype{
-                display: none;
-            }
-            #add{
-                width: 99.35%;
-                margin: 4px;
-                /* padding: 0px; */
-                text-align: center;
-                font-size: 30pt;
-                border: 3px solid #6b6bff;
-                border-radius: 16px;
-                background-color: white;
-                color: #6b6bff;
-            }
-            #add:hover{
-                cursor: pointer;
-            }
-            #add:active{
-                background-color: #eeeeff;
-            }
-        </style>
-        <script>
-            counter = 0;
-            document.addEventListener("DOMContentLoaded", function(){
-                             //ajax csrf 토큰 생성
-                function getCookie(name) {
-                    var cookieValue = null;
-                    if (document.cookie && document.cookie !== '') {
-                        var cookies = document.cookie.split(';');
-                        for (var i = 0; i < cookies.length; i++) {
-                            var cookie = cookies[i].trim();
-                            // Does this cookie string begin with the name we want?
-                            if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                                break;
-                            }
-                        }
-                    }
-                    return cookieValue;
-                }
-                var csrftoken = getCookie('csrftoken');
-
-                function csrfSafeMethod(method) {
-                    // these HTTP methods do not require CSRF protection
-                    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
-                }
-                $.ajaxSetup({
-                    beforeSend: function(xhr, settings) {
-                        if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
-                            xhr.setRequestHeader("X-CSRFToken", csrftoken);
-                        }
-                    }
-                });
-            });
-
-            function Load()
-            {
-                var infos = {{ info|safe }}
-                for(var key in infos)
-                {
-                    var item = document.getElementById("item-prototype").cloneNode(true);
-                    item.querySelector("#cname").setAttribute("id","cname"+counter);
-                    item.querySelector("#cname").value = key;
-                    item.querySelector("#oauth").setAttribute("id","oauth"+counter);
-                    item.querySelector("#oauth").value = infos[key].oauth;
-                    document.getElementById("list").appendChild(item);
-                }
-            }
-
-            function Add()
-            {
-                var item = document.getElementById("item-prototype").cloneNode(true);
-                item.setAttribute("id","item"+counter);
-                var cname = item.querySelector("#cname").setAttribute("id","cname"+counter);
-                var oauth = item.querySelector("#oauth").setAttribute("id","oauth"+counter);
-                var apply = item.querySelector("#apply");
-                apply.value = counter;
-                apply.addEventListener("click", function(event){ 
-                    var n = event.target.value;
-                    document.getElementById("cname"+n).setAttribute("readonly",true);
-                    document.getElementById("oauth"+n).setAttribute("readonly",true);
-                    
-
-                 });
-                document.getElementById("list").appendChild(item);
-                counter++;
-            }
-        </script>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}" />
+        {{ info|json_script:'infos' }}
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="{% static 'index.js' %}"></script>
     </head>
     <body>
         <header>Twitch Channel Archiver</header>
         <section>
             <div id="list">
                 <div id="item-prototype" class="item">
-                    Channel Name: <input id="cname" type="text">
-                    OAuth : <input id="oauth" type="text">
-                    <button id="apply" style="width:70px;height:20px;">APPLY</button>
-                    <button id="delete" style="width:70px;height:20px;float:right;margin-right:15px;">DELETE</button>
-                    <br>
-                    <span id="info">Last Download Time : 2020-01 Next Download Time : 2020-01-xx Video Downloaded # : 64 STATE : IDLE or Downloading</span>
-                    <button id="show" style="width:70px;height:20px;float:right;margin-right:15px;">list</button>
-                    
+                    <div style="margin-left: 9px; display: inline-block; ">
+                        <div style="display: inline-block;">
+                            Channel Name: <input id="cname" type="text">
+                            OAuth<a target="_blank" style="font-style: normal;text-decoration: none;" href="https://www.youtube.com/watch?v=1MBsUoFGuls"><sup>?</sup></a> : <input id="oauth" type="text">
+                            <button id="apply" class="apply">APPLY</button>
+                        </div>
+                        <div id="loading" style="display: none;">
+                            <div class="outer-circle">
+                                <div class="inner-circle"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <span id="info"></span>
+                    </div>
+                    <div class="right-floater">
+                        <button id="sync-toggle" class="right-btn toggle-down" style="display: none;">OFF</button>
+                        <button id="show" class="right-btn">▼</button>
+                        <button id="delete" class="right-btn" style="margin-right: 12px;">X</button>
+                   </div>
+                   <div id="downlist" class="downlist">
+                        <hr style="border: 1px solid var(--theme-color);">
+                        <div id="downlist-title"></div>
+                        <div id="downlist-item" style="display: none">
+                            <img id="thumbnail" style="display: inline-block;">
+                            <div id="listitem-content" class="listitem-content"></div>
+                            <div class="progress">
+                                <div class="outer-circle">
+                                    <div class="inner-circle"></div>
+                                </div>
+                                <div id="progress" style="display: none;">-%</div>
+                                <img width=30 src="{% static 'check.png' %}" style="display: none;">
+                            </div>
+                        </div>
+                   </div>
                 </div>
             </div>
             <button id="add" onclick="Add()">+</button>
