@@ -1,5 +1,5 @@
-# FROM ubuntu:22.04
-FROM python:3.8.10
+FROM ubuntu:22.04
+# FROM python:3.8.10
 
 MAINTAINER beatheat <beatheat888@gmail.com>
 
