@@ -5,6 +5,7 @@
         <meta charset='utf-8'>
         <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}" />
         {{ info|json_script:'infos' }}
+        {% csrf_token %}
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="{% static 'index.js' %}"></script>
     </head>
