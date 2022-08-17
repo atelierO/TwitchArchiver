@@ -15,7 +15,7 @@ import re, os, json, threading
 chrome_options = Options()
 chrome_options.add_argument("--headless") 
 chrome_options.add_argument("--no-sandbox")
-webdriver_service = Service("../chromedriver")
+webdriver_service = Service("./chromedriver")
 driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
 
 manager = DownloadManager(driver)

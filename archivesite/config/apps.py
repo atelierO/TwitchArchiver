@@ -41,18 +41,18 @@ class DownloadManager(threading.Thread):
                     channel['running'] = False
 
     def load(self):
-        with open("../channels.json", "r") as file:
+        with open("./channels.json", "r") as file:
             self.channels = json.load(file)
 
     def save(self):
-        with open("../channels.json", "w") as file:
+        with open("./channels.json", "w") as file:
             json.dump(self.channels,file,indent=4)
 
     def reconfig(self, channel):
         p = re.compile('(?<=\()[0-9]*(?=\).mp4)')
-        if os.path.isdir('../download') == False:
-            os.mkdir('../download')
-        download_path = '../download/' + channel['cname']
+        if os.path.isdir('./download') == False:
+            os.mkdir('./download')
+        download_path = './download/' + channel['cname']
         if os.path.isdir(download_path) == False:   
             os.mkdir(download_path)
         for path in os.listdir(download_path):
@@ -164,14 +164,14 @@ class DownloadManager(threading.Thread):
             self.download_threads[cname]['lock'].acquire()
             #make directory name
             vcode = channel["incomplete"][0]
-            download_path = '../download/' + cname
-            if os.path.isdir('../download') == False:
-                os.mkdir('../download')
+            download_path = './download/' + cname
+            if os.path.isdir('./download') == False:
+                os.mkdir('./download')
             if os.path.isdir(download_path) == False:
                 os.mkdir(download_path)
             vdate = datetime.strptime(channel['metadata'][vcode]['createdAt'],"%Y-%m-%d %H:%M:%S").strftime('%Y-%m-%d')
             download_path = download_path + '/[' + vdate + '] ' + channel['metadata'][vcode]['owner']['displayName'] + ' - ' + channel['metadata'][vcode]['title'] + ' (' + vcode +').mp4'
-            runner = ['../TwitchDownloaderCLI', '-m','VideoDownload','-q','1080p60','-o',download_path,'--ffmpeg-path','../ffmpeg','-u',vcode]
+            runner = ['./TwitchDownloaderCLI', '-m','VideoDownload','-q','1080p60','-o',download_path,'--ffmpeg-path','./ffmpeg','-u',vcode]
             print(' '.join(runner))
             if channel['oauth'] != '':
                 runner.append('--oauth')
