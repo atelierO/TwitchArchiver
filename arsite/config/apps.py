@@ -106,7 +106,7 @@ class DownloadManager(threading.Thread):
 
     def check(self, channel):
         self.driver.get('https://www.twitch.tv/'+channel['cname']+'/videos?filter=archives&sort=time')
-        WebDriverWait(self.driver, 3).until(EC.presence_of_element_located((By.XPATH,'//a[@data-a-target="preview-card-image-link"]')))
+        WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH,'//a[@data-a-target="preview-card-image-link"]')))
         video_link_elements = self.driver.find_elements(By.XPATH,'//a[@data-a-target="preview-card-image-link"]')
         p = re.compile("(?<=videos/)[0-9]+")
 

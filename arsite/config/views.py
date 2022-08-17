@@ -37,7 +37,7 @@ def validate_channel(request):
         print(request.POST)
         driver.get('https://www.twitch.tv/'+request.POST['channel_name'])
         try:
-            WebDriverWait(driver, 2).until(EC.presence_of_element_located((By.XPATH,'//p[@data-a-target="core-error-message"]')))
+            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH,'//p[@data-a-target="core-error-message"]')))
             valid = False
         except:
             valid = True
