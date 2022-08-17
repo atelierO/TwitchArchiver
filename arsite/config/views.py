@@ -12,6 +12,9 @@ from config.apps import DownloadManager
 
 import re, os, json, threading
 
+
+global driver
+global manager
 chrome_options = Options()
 chrome_options.add_argument("--headless") 
 chrome_options.add_argument("--no-sandbox")
@@ -22,16 +25,19 @@ manager = DownloadManager(driver)
 manager.start()
 
 def index(request):
+    global manager
     manager.reload()
     return render(request, 'index.html',{'info':manager.getinfo_all()})
 
 def change_oauth(request):
+    global manager
     if request.method == "POST":
         manager.setoauth(request.POST['channel_name'],request.POST['oauth'])
         return HttpResponse(json.dumps({'valid':True, 'cname':request.POST['channel_name'],'oauth':request.POST['oauth'],'i':request.POST['i']}),content_type='application/json')
     return HttpResponseBadRequest('Not permitted access')
 
 def validate_channel(request):
+    global driver
     valid = False
     if request.method == "POST":
         print(request.POST)
@@ -45,6 +51,7 @@ def validate_channel(request):
     return HttpResponseBadRequest('Not permitted access')
 
 def register(request):
+    global manager
     valid = False
     log = ''
     if request.method == "POST":
@@ -55,6 +62,7 @@ def register(request):
     return HttpResponseBadRequest('Not permitted access')
 
 def download_channel(request):
+    global manager
     if request.method == "POST":
         if request.POST['toggle'] == 'true':
             manager.download(request.POST['channel_name'])
@@ -66,12 +74,14 @@ def download_channel(request):
     return HttpResponseBadRequest('Not permitted access')
 
 def delete_channel(request):
+    global manager
     if request.method == "POST":
         manager.delete(request.POST['channel_name'])
         return HttpResponse('OK')
     return HttpResponseBadRequest('Not permitted access')
 
 def download_state(request):
+    global manager
     if request.method == "POST":
         states = []
         for cname in request.POST.getlist('channel_names[]'):
