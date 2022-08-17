@@ -16,4 +16,3 @@ CMD ["python3", "./site/manage.py", "runserver", "0.0.0.0:8000"]
 
 EXPOSE 8000
 # django 서버의 포트를 8000로 지정하였으므로 Docker의 컨테이너 또한 8000 포트를 열어줍니다.
-a
