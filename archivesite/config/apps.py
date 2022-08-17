@@ -19,6 +19,7 @@ class ConfigConfig(AppConfig):
 
 
 
+
 class DownloadManager(threading.Thread):
     def __init__(self,driver):
         threading.Thread.__init__(self) 
@@ -49,8 +50,12 @@ class DownloadManager(threading.Thread):
 
     def reconfig(self, channel):
         p = re.compile('(?<=\()[0-9]*(?=\).mp4)')
-        
-        for path in os.listdir('../download/' + channel['cname']):
+        if os.path.isdir('../download') == False:
+            os.mkdir('../download')
+        download_path = '../download/' + channel['cname']
+        if os.path.isdir(download_path) == False:   
+            os.mkdir(download_path)
+        for path in os.listdir(download_path):
             vcode = p.search(path)
             if vcode == None:
                 continue
@@ -160,6 +165,8 @@ class DownloadManager(threading.Thread):
             #make directory name
             vcode = channel["incomplete"][0]
             download_path = '../download/' + cname
+            if os.path.isdir('../download') == False:
+                os.mkdir('../download')
             if os.path.isdir(download_path) == False:
                 os.mkdir(download_path)
             vdate = datetime.strptime(channel['metadata'][vcode]['createdAt'],"%Y-%m-%d %H:%M:%S").strftime('%Y-%m-%d')
