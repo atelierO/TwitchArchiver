@@ -145,7 +145,7 @@ class DownloadManager(threading.Thread):
     def download_state_thread(self,channel,out):
         p = re.compile("[0-9]+%")
         while channel['running'] and channel['working']['progress'] != '100%':
-            time.sleep(0.5)
+            time.sleep(10)
             content = p.search(out.readline().decode('utf-8'))
             if content != None:
                 channel['working']['progress'] = content.group()

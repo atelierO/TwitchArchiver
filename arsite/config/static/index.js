@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     LoadAll();
-    state_interval_id = setInterval(GetSiteState, 1000);
+    state_interval_id = setInterval(GetSiteState, 10000);
 });
 
 
