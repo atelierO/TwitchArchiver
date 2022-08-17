@@ -19,4 +19,4 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('config.urls')),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
