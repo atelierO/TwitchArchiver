@@ -1,13 +1,6 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.http import HttpResponseBadRequest
 
-# from selenium import webdriver
-# from selenium.webdriver.chrome.service import Service
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.support.ui import WebDriverWait
-# from selenium.webdriver.support import expected_conditions as EC
-# from selenium.webdriver.chrome.options import Options
-
 from config.apps import DownloadManager
 
 import re, os, json, threading
@@ -15,11 +8,6 @@ import re, os, json, threading
 
 
 global manager
-# chrome_options = Options()
-# chrome_options.add_argument("--headless") 
-# chrome_options.add_argument("--no-sandbox")
-# webdriver_service = Service("./chromedriver")
-# driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
 
 manager = DownloadManager()
 manager.start()

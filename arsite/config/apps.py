@@ -33,8 +33,6 @@ class TwitchAPI:
         self.token_release = datetime.now()
         self.access_token = res.json()['access_token']
     
-
-
     def get_channel_video_data(self, username):
         headers = {
             "Authorization" :  'Bearer ' + self.access_token,
@@ -59,9 +57,6 @@ class DownloadManager(threading.Thread):
         self.load()
         self.download_threads = {}
         self.twitch_api = TwitchAPI()
-
-    # def __del__(self):
-    #     self.driver.close()
 
     def run(self):
         while True:
