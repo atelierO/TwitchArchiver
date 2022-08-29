@@ -149,7 +149,7 @@ class DownloadManager(threading.Thread):
 
             if metadata['type'] == 'archive':
                 m = re.compile("%{width}x%{height}").search(metadata['thumbnail_url'])
-                metadata['thumbnail_url'] = metadata['thumbnail_url'][0:m.start()] + '165x85' + metadata['thumbnail_url'][m.end():len(metadata['thumbnail_url'])]
+                metadata['thumbnail_url'] = metadata['thumbnail_url'][0:m.start()] + '160x90' + metadata['thumbnail_url'][m.end():len(metadata['thumbnail_url'])]
                 metadata['created_at'] =  datetime.strptime(metadata['created_at'],"%Y-%m-%dT%H:%M:%SZ").strftime('%Y-%m-%d %H:%M:%S')
                 channel['metadata'][vcode] = metadata
                 channel['incomplete'].append(vcode)

@@ -183,7 +183,6 @@ function AddDownlist(downlist,incomplete,complete,metadata)
         listitem.style.display = 'block';
         var thumbnail = listitem.querySelector("#thumbnail");
         thumbnail.setAttribute('src',metadata[key].thumbnail_url);
-        thumbnail.setAttribute('width','150');
         var content = listitem.querySelector("#listitem-content");
 
         var loading = listitem.getElementsByTagName("img")[1];
