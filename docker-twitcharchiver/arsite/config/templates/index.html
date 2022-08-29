@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}" />
+        {{ info|json_script:'infos' }}
+        {% csrf_token %}
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="{% static 'index.js' %}"></script>
+    </head>
+    <body>
+        <header>Twitch Channel Archiver</header>
+        <section>
+            <div id="list">
+                <div id="item-prototype" class="item">
+                    <div style="margin-left: 9px; display: inline-block; ">
+                        <div style="display: inline-block;">
+                            Channel Name: <input id="cname" type="text">
+                            OAuth<a target="_blank" style="font-style: normal;text-decoration: none;" href="https://www.youtube.com/watch?v=1MBsUoFGuls"><sup>?</sup></a> : <input id="oauth" type="text">
+                            <button id="apply" class="apply">APPLY</button>
+                        </div>
+                        <div id="loading" style="display: none;">
+                            <div class="outer-circle">
+                                <div class="inner-circle"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <span id="info"></span>
+                    </div>
+                    <div class="right-floater">
+                        <button id="sync-toggle" class="right-btn toggle-down" style="display: none;">OFF</button>
+                        <button id="show" class="right-btn">▼</button>
+                        <button id="delete" class="right-btn" style="margin-right: 12px;">X</button>
+                   </div>
+                   <div id="downlist" class="downlist">
+                        <hr style="border: 1px solid var(--theme-color);">
+                        <div id="downlist-title"></div>
+                        <div id="downlist-item" style="display: none">
+                            <img id="thumbnail" style="display: inline-block;">
+                            <div id="listitem-content" class="listitem-content"></div>
+                            <div class="progress">
+                                <div class="outer-circle">
+                                    <div class="inner-circle"></div>
+                                </div>
+                                <div id="progress" style="display: none;">-%</div>
+                                <img width=30 src="{% static 'check.png' %}" style="display: none;">
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <button id="add" onclick="Add()">+</button>
+        </section>
+    </body>
+</html>
