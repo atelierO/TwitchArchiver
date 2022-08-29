@@ -1,27 +1,27 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.http import HttpResponseBadRequest
 
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.options import Options
+# from selenium import webdriver
+# from selenium.webdriver.chrome.service import Service
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions as EC
+# from selenium.webdriver.chrome.options import Options
 
 from config.apps import DownloadManager
 
 import re, os, json, threading
 
 
-global driver
-global manager
-chrome_options = Options()
-chrome_options.add_argument("--headless") 
-chrome_options.add_argument("--no-sandbox")
-webdriver_service = Service("./chromedriver")
-driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
 
-manager = DownloadManager(driver)
+global manager
+# chrome_options = Options()
+# chrome_options.add_argument("--headless") 
+# chrome_options.add_argument("--no-sandbox")
+# webdriver_service = Service("./chromedriver")
+# driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
+
+manager = DownloadManager()
 manager.start()
 
 def index(request):
@@ -36,29 +36,13 @@ def change_oauth(request):
         return HttpResponse(json.dumps({'valid':True, 'cname':request.POST['channel_name'],'oauth':request.POST['oauth'],'i':request.POST['i']}),content_type='application/json')
     return HttpResponseBadRequest('Not permitted access')
 
-def validate_channel(request):
-    global driver
-    valid = False
-    if request.method == "POST":
-        print(request.POST)
-        driver.get('https://www.twitch.tv/'+request.POST['channel_name'])
-        try:
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH,'//p[@data-a-target="core-error-message"]')))
-            valid = False
-        except:
-            valid = True
-        return HttpResponse(json.dumps({'valid':valid, 'i':request.POST['i']}),content_type='application/json')
-    return HttpResponseBadRequest('Not permitted access')
-
 def register(request):
     global manager
-    valid = False
-    log = ''
     if request.method == "POST":
         data = request.POST
         print(data)
-        valid = manager.add(data['channel_name'], data['oauth'])
-        return HttpResponse(json.dumps({'valid':valid, 'i': request.POST["i"],'channel': manager.getinfo(data['channel_name'])}),content_type='application/json')
+        state = manager.add(data['channel_name'], data['oauth'])
+        return HttpResponse(json.dumps({'state':state, 'i': request.POST["i"],'channel':manager.getinfo(data['channel_name']) if state=='ok' else ''}),content_type='application/json')
     return HttpResponseBadRequest('Not permitted access')
 
 def download_channel(request):

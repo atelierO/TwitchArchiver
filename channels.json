@@ -3,610 +3,214 @@
         "cname": "oh__dawn",
         "oauth": "",
         "running": false,
-        "last-download": "2022-08-18 02:21:31",
+        "last-download": "2022-08-29 23:18:17",
         "regular-download": false,
-        "working": {},
+        "working": {
+            "progress": "3%"
+        },
         "complete": [],
         "incomplete": [
-            "1564462081",
-            "1561263263",
-            "1559745498",
-            "1557812430",
-            "1557808094",
-            "1556781736",
-            "1556458767",
-            "1555836642",
-            "1555566886",
-            "1554955573",
-            "1554504215",
-            "1553531616",
-            "1552040277"
+            "1574997449",
+            "1571168516",
+            "1570221130",
+            "1568359427",
+            "1568338692",
+            "1567903905",
+            "1566447631",
+            "1566423300",
+            "1566402399",
+            "1564462081"
         ],
         "metadata": {
+            "1574997449": {
+                "id": "1574997449",
+                "stream_id": "39613877463",
+                "user_id": "753713730",
+                "user_login": "oh__dawn",
+                "user_name": "\uc624\uc0c8\ubcbd_",
+                "title": "[V] \ub9c9\uc7a5\ud1a0\ub860 W.\ud038\uc288\uc544,\ub958\ucc44\uacbd,\uc720\ucc44\ub9b0,\uba00\ucf54",
+                "description": "",
+                "created_at": "2022-08-28 11:50:58",
+                "published_at": "2022-08-28T11:50:58Z",
+                "url": "https://www.twitch.tv/videos/1574997449",
+                "thumbnail_url": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1e634d516645bd179dd5_oh__dawn_39613877463_1661687453//thumb/thumb0-165x85.jpg",
+                "viewable": "public",
+                "view_count": 973,
+                "language": "ko",
+                "type": "archive",
+                "duration": "3h10m38s",
+                "muted_segments": null
+            },
+            "1571168516": {
+                "id": "1571168516",
+                "stream_id": "39596870391",
+                "user_id": "753713730",
+                "user_login": "oh__dawn",
+                "user_name": "\uc624\uc0c8\ubcbd_",
+                "title": "[V] 1000\ud314 \uae30\ub150\uc2dd\uc5d0 \ud560 \uacf5\ud3ec\uac8c\uc784 \ubbf8\ub9ac \uc815\ud558\ub294 \uacf5\ud3ec\uac8c\uc784 \uc6d4\ub4dc\ucef5(\uc601\ub3c4 \ud658\uc601)",
+                "description": "",
+                "created_at": "2022-08-24 12:01:01",
+                "published_at": "2022-08-24T12:01:01Z",
+                "url": "https://www.twitch.tv/videos/1571168516",
+                "thumbnail_url": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6bbb3b31b3befedaded4_oh__dawn_39596870391_1661342454//thumb/thumb0-165x85.jpg",
+                "viewable": "public",
+                "view_count": 279,
+                "language": "ko",
+                "type": "archive",
+                "duration": "1h53m50s",
+                "muted_segments": null
+            },
+            "1570221130": {
+                "id": "1570221130",
+                "stream_id": "39594133911",
+                "user_id": "753713730",
+                "user_login": "oh__dawn",
+                "user_name": "\uc624\uc0c8\ubcbd_",
+                "title": "[V] \uad11\uc2e0\ub3c4 \ubaa8\uc9d1\uc911",
+                "description": "",
+                "created_at": "2022-08-23 12:45:32",
+                "published_at": "2022-08-23T12:45:32Z",
+                "url": "https://www.twitch.tv/videos/1570221130",
+                "thumbnail_url": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f9ebde4bfcb9929dd952_oh__dawn_39594133911_1661258725//thumb/thumb0-165x85.jpg",
+                "viewable": "public",
+                "view_count": 136,
+                "language": "ko",
+                "type": "archive",
+                "duration": "2h15m22s",
+                "muted_segments": null
+            },
+            "1568359427": {
+                "id": "1568359427",
+                "stream_id": "39588799527",
+                "user_id": "753713730",
+                "user_login": "oh__dawn",
+                "user_name": "\uc624\uc0c8\ubcbd_",
+                "title": "[V] \uc2f1\ud06c\ub8f8 \ud569\ubc29 w.\ub839",
+                "description": "",
+                "created_at": "2022-08-21 12:39:07",
+                "published_at": "2022-08-21T12:39:07Z",
+                "url": "https://www.twitch.tv/videos/1568359427",
+                "thumbnail_url": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7e68b8926640c30e64de_oh__dawn_39588799527_1661085542//thumb/thumb0-165x85.jpg",
+                "viewable": "public",
+                "view_count": 260,
+                "language": "ko",
+                "type": "archive",
+                "duration": "2h46m16s",
+                "muted_segments": null
+            },
+            "1568338692": {
+                "id": "1568338692",
+                "stream_id": "39588660151",
+                "user_id": "753713730",
+                "user_login": "oh__dawn",
+                "user_name": "\uc624\uc0c8\ubcbd_",
+                "title": "[V] \uc2f1\ud06c\ub8f8 \ud569\ubc29 w.\ub839",
+                "description": "",
+                "created_at": "2022-08-21 12:01:37",
+                "published_at": "2022-08-21T12:01:37Z",
+                "url": "https://www.twitch.tv/videos/1568338692",
+                "thumbnail_url": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ca2f97d5bc712484a0e4_oh__dawn_39588660151_1661083290//thumb/thumb0-165x85.jpg",
+                "viewable": "public",
+                "view_count": 67,
+                "language": "ko",
+                "type": "archive",
+                "duration": "35m16s",
+                "muted_segments": null
+            },
+            "1567903905": {
+                "id": "1567903905",
+                "stream_id": "39587038247",
+                "user_id": "753713730",
+                "user_login": "oh__dawn",
+                "user_name": "\uc624\uc0c8\ubcbd_",
+                "title": "[V] \uc0c8\ubcbd\uad50 \uc2e0\ub3c4 \ubaa8\uc9d1\uc911",
+                "description": "",
+                "created_at": "2022-08-20 23:31:41",
+                "published_at": "2022-08-20T23:31:41Z",
+                "url": "https://www.twitch.tv/videos/1567903905",
+                "thumbnail_url": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3393048ea45924b92814_oh__dawn_39587038247_1661038294//thumb/thumb0-165x85.jpg",
+                "viewable": "public",
+                "view_count": 914,
+                "language": "ko",
+                "type": "archive",
+                "duration": "6h51m50s",
+                "muted_segments": null
+            },
+            "1566447631": {
+                "id": "1566447631",
+                "stream_id": "39583088231",
+                "user_id": "753713730",
+                "user_login": "oh__dawn",
+                "user_name": "\uc624\uc0c8\ubcbd_",
+                "title": "[V] \uc0c8\ubcbd\uad50 \uc2e0\ub3c4 \ubaa8\uc9d1\uc911",
+                "description": "",
+                "created_at": "2022-08-19 14:13:33",
+                "published_at": "2022-08-19T14:13:33Z",
+                "url": "https://www.twitch.tv/videos/1566447631",
+                "thumbnail_url": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3cd12a446848db6fdc3c_oh__dawn_39583088231_1660918408//thumb/thumb0-165x85.jpg",
+                "viewable": "public",
+                "view_count": 137,
+                "language": "ko",
+                "type": "archive",
+                "duration": "2h10m18s",
+                "muted_segments": null
+            },
+            "1566423300": {
+                "id": "1566423300",
+                "stream_id": "39582943655",
+                "user_id": "753713730",
+                "user_login": "oh__dawn",
+                "user_name": "\uc624\uc0c8\ubcbd_",
+                "title": "[V] \ub178\ub798\ucc45\ub9cc\ub4e4\uae30! \ud5f7\uac08\ub9ac\ub294 \ub178\ub798\ub294 \ubd80\ub974\uace0 \uc785\ub825\ud560\uac8c~",
+                "description": "",
+                "created_at": "2022-08-19 13:35:52",
+                "published_at": "2022-08-19T13:35:52Z",
+                "url": "https://www.twitch.tv/videos/1566423300",
+                "thumbnail_url": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ccdf7342482a9ce4c4f3_oh__dawn_39582943655_1660916147//thumb/thumb0-165x85.jpg",
+                "viewable": "public",
+                "view_count": 56,
+                "language": "ko",
+                "type": "archive",
+                "duration": "37m10s",
+                "muted_segments": null
+            },
+            "1566402399": {
+                "id": "1566402399",
+                "stream_id": "39582805479",
+                "user_id": "753713730",
+                "user_login": "oh__dawn",
+                "user_name": "\uc624\uc0c8\ubcbd_",
+                "title": "[V] \ub178\ub798\ucc45\ub9cc\ub4e4\uae30! \ud5f7\uac08\ub9ac\ub294 \ub178\ub798\ub294 \ubd80\ub974\uace0 \uc785\ub825\ud560\uac8c~",
+                "description": "",
+                "created_at": "2022-08-19 13:02:02",
+                "published_at": "2022-08-19T13:02:02Z",
+                "url": "https://www.twitch.tv/videos/1566402399",
+                "thumbnail_url": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8cf3557fbee744666995_oh__dawn_39582805479_1660914115//thumb/thumb0-165x85.jpg",
+                "viewable": "public",
+                "view_count": 45,
+                "language": "ko",
+                "type": "archive",
+                "duration": "32m32s",
+                "muted_segments": null
+            },
             "1564462081": {
+                "id": "1564462081",
+                "stream_id": "39576923191",
+                "user_id": "753713730",
+                "user_login": "oh__dawn",
+                "user_name": "\uc624\uc0c8\ubcbd_",
                 "title": "[V] \uc138\uc0c1\uc774 \ubb34\ub108\uc9c4 \uc0c8\ubcbd\uc774...",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/82cb531d7a39b3199693_oh__dawn_39576923191_1660735903//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/82cb531d7a39b3199693_oh__dawn_39576923191_1660735903//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/82cb531d7a39b3199693_oh__dawn_39576923191_1660735903//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/82cb531d7a39b3199693_oh__dawn_39576923191_1660735903//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-17 11:31:48",
-                "lengthSeconds": 15880,
-                "owner": {
-                    "displayName": "\uc624\uc0c8\ubcbd_"
-                }
-            },
-            "1561263263": {
-                "title": "[V] \ubaa8\ub2dd \ud53c\uc544\ub178",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/37c5186df614d3dd1bce_oh__dawn_39567399591_1660436926//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/37c5186df614d3dd1bce_oh__dawn_39567399591_1660436926//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/37c5186df614d3dd1bce_oh__dawn_39567399591_1660436926//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/37c5186df614d3dd1bce_oh__dawn_39567399591_1660436926//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-14 00:28:53",
-                "lengthSeconds": 17748,
-                "owner": {
-                    "displayName": "\uc624\uc0c8\ubcbd_"
-                }
-            },
-            "1559745498": {
-                "title": "[V] \ucd5c\uc545\uc758 \uace0\ubc31.. \uc774\uac83\ub9cc \ud53c\ud558\uc790",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9cf788bf7f061ea512ab_oh__dawn_39566206295_1660309220//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9cf788bf7f061ea512ab_oh__dawn_39566206295_1660309220//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9cf788bf7f061ea512ab_oh__dawn_39566206295_1660309220//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9cf788bf7f061ea512ab_oh__dawn_39566206295_1660309220//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-12 13:00:25",
-                "lengthSeconds": 8686,
-                "owner": {
-                    "displayName": "\uc624\uc0c8\ubcbd_"
-                }
-            },
-            "1557812430": {
-                "title": "[V] \ub098..\ub108 \uc88b\uc544\ud558\ub0d0..?",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c466b852e07dca672c17_oh__dawn_39560591143_1660136895//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c466b852e07dca672c17_oh__dawn_39560591143_1660136895//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c466b852e07dca672c17_oh__dawn_39560591143_1660136895//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c466b852e07dca672c17_oh__dawn_39560591143_1660136895//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-10 13:08:22",
-                "lengthSeconds": 6946,
-                "owner": {
-                    "displayName": "\uc624\uc0c8\ubcbd_"
-                }
-            },
-            "1557808094": {
-                "title": "[V] \ub098..\ub108 \uc88b\uc544\ud558\ub0d0..?",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2cc4c40364a81245b05c_oh__dawn_39560558535_1660136493//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2cc4c40364a81245b05c_oh__dawn_39560558535_1660136493//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2cc4c40364a81245b05c_oh__dawn_39560558535_1660136493//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2cc4c40364a81245b05c_oh__dawn_39560558535_1660136493//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-10 13:01:40",
-                "lengthSeconds": 396,
-                "owner": {
-                    "displayName": "\uc624\uc0c8\ubcbd_"
-                }
-            },
-            "1556781736": {
-                "title": "[V] \ub178\ub798 \ud558\ub294 \ub098",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0c8d41eccc506a9ba86b_oh__dawn_39557437239_1660045377//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0c8d41eccc506a9ba86b_oh__dawn_39557437239_1660045377//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0c8d41eccc506a9ba86b_oh__dawn_39557437239_1660045377//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0c8d41eccc506a9ba86b_oh__dawn_39557437239_1660045377//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-09 11:43:05",
-                "lengthSeconds": 11848,
-                "owner": {
-                    "displayName": "\uc624\uc0c8\ubcbd_"
-                }
-            },
-            "1556458767": {
-                "title": "[V] mbti\uc18c\uac1c\ud305\ud558\uae30",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6e609173b0a4a9d39c93_oh__dawn_39556172231_1660007273//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6e609173b0a4a9d39c93_oh__dawn_39556172231_1660007273//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6e609173b0a4a9d39c93_oh__dawn_39556172231_1660007273//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6e609173b0a4a9d39c93_oh__dawn_39556172231_1660007273//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-09 01:08:00",
-                "lengthSeconds": 29906,
-                "owner": {
-                    "displayName": "\uc624\uc0c8\ubcbd_"
-                }
-            },
-            "1555836642": {
-                "title": "[V] \ub538\ub0b4\ubbf8 \ud0a4\uc6b0\uae30",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c703ab0f7c0347b995a6_oh__dawn_39554793687_1659960068//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c703ab0f7c0347b995a6_oh__dawn_39554793687_1659960068//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c703ab0f7c0347b995a6_oh__dawn_39554793687_1659960068//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c703ab0f7c0347b995a6_oh__dawn_39554793687_1659960068//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-08 12:01:15",
-                "lengthSeconds": 27416,
-                "owner": {
-                    "displayName": "\uc624\uc0c8\ubcbd_"
-                }
-            },
-            "1555566886": {
-                "title": "[V] \uc544\uce68\ub178\ub798\ubc29",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/29d341e56c7358e65a9e_oh__dawn_39553545895_1659923815//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/29d341e56c7358e65a9e_oh__dawn_39553545895_1659923815//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/29d341e56c7358e65a9e_oh__dawn_39553545895_1659923815//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/29d341e56c7358e65a9e_oh__dawn_39553545895_1659923815//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-08 01:57:02",
-                "lengthSeconds": 14154,
-                "owner": {
-                    "displayName": "\uc624\uc0c8\ubcbd_"
-                }
-            },
-            "1554955573": {
-                "title": "[V] \ub538 \ud0a4\uc6b0\uae30",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4c8b96446fb19484bf86_oh__dawn_39552467975_1659878433//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4c8b96446fb19484bf86_oh__dawn_39552467975_1659878433//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4c8b96446fb19484bf86_oh__dawn_39552467975_1659878433//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4c8b96446fb19484bf86_oh__dawn_39552467975_1659878433//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-07 13:20:40",
-                "lengthSeconds": 12974,
-                "owner": {
-                    "displayName": "\uc624\uc0c8\ubcbd_"
-                }
-            },
-            "1554504215": {
-                "title": "[V] \uad7f\ubaa8\ub2dd~!~!",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0d8ce898a3d953d132bd_oh__dawn_39550624135_1659830801//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0d8ce898a3d953d132bd_oh__dawn_39550624135_1659830801//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0d8ce898a3d953d132bd_oh__dawn_39550624135_1659830801//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0d8ce898a3d953d132bd_oh__dawn_39550624135_1659830801//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-07 00:06:46",
-                "lengthSeconds": 12046,
-                "owner": {
-                    "displayName": "\uc624\uc0c8\ubcbd_"
-                }
-            },
-            "1553531616": {
-                "title": "[V]",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c16240f0be6fcb32385d_oh__dawn_39547712183_1659744781//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c16240f0be6fcb32385d_oh__dawn_39547712183_1659744781//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c16240f0be6fcb32385d_oh__dawn_39547712183_1659744781//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c16240f0be6fcb32385d_oh__dawn_39547712183_1659744781//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-06 00:13:06",
-                "lengthSeconds": 13518,
-                "owner": {
-                    "displayName": "\uc624\uc0c8\ubcbd_"
-                }
-            },
-            "1552040277": {
-                "title": "[V] \ud50c\ub808\uac00\uace0\uc2f6\uc5b4\uc694/\uace8\ub4dc 1 0\uc810",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a208d6e3a5351bd0ece3_oh__dawn_39543806983_1659618955//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a208d6e3a5351bd0ece3_oh__dawn_39543806983_1659618955//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a208d6e3a5351bd0ece3_oh__dawn_39543806983_1659618955//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a208d6e3a5351bd0ece3_oh__dawn_39543806983_1659618955//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-04 13:16:02",
-                "lengthSeconds": 10170,
-                "owner": {
-                    "displayName": "\uc624\uc0c8\ubcbd_"
-                }
-            }
-        }
-    },
-    "urs_toko": {
-        "cname": "urs_toko",
-        "oauth": "",
-        "running": false,
-        "last-download": "2022-08-18 03:19:38",
-        "regular-download": false,
-        "working": {},
-        "complete": [],
-        "incomplete": [
-            "1563548416",
-            "1560731875",
-            "1558840884",
-            "1558783274",
-            "1555707233",
-            "1554514759",
-            "1552421201",
-            "1549338529",
-            "1546230792",
-            "1542256556",
-            "1540275495",
-            "1538301335",
-            "1535383124",
-            "1533600991",
-            "1530798462",
-            "1529634074",
-            "1527766034",
-            "1524909569",
-            "1524000824",
-            "1522212957",
-            "1521183581",
-            "1519289217",
-            "1518602121",
-            "1516382056",
-            "1514646845",
-            "1511828482"
-        ],
-        "metadata": {
-            "1563548416": {
-                "title": "\u3010LOL\u3011Clush\u306b\u5411\u3051\u3066\u7df4\u7fd2\u3059\u308b\u305e\ud83d\udc7e\u306a\u306e\u3067\u3059\u3010TOP\u3011!member",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e20f65ce0db6874cc044_urs_toko_39574513943_1660654862//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e20f65ce0db6874cc044_urs_toko_39574513943_1660654862//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e20f65ce0db6874cc044_urs_toko_39574513943_1660654862//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e20f65ce0db6874cc044_urs_toko_39574513943_1660654862//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-16 13:01:07",
-                "lengthSeconds": 32914,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1560731875": {
-                "title": "\u3010RANK\u3011\u3042\u306a\u305f\u304c\u843d\u3057\u305f\u306e\u306f\u6226\u58eb\u306e\u5fc3\u3067\u3059\u304bLP\u3067\u3059\u304b\u3010TOP/ADC\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/96187b3a18e67f943446_urs_toko_41114611099_1660395757//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/96187b3a18e67f943446_urs_toko_41114611099_1660395757//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/96187b3a18e67f943446_urs_toko_41114611099_1660395757//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/96187b3a18e67f943446_urs_toko_41114611099_1660395757//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-13 13:02:42",
-                "lengthSeconds": 28156,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1558840884": {
-                "title": "\u3010RANK-S3\u3011\u226a\u6c42\u226b\u6bba\u610f\u3092\u6301\u3064\u65b9\u6cd5\u226a\u51fa\u226b\u6bba\u610f\u3092\u5ba5\u3081\u308b\u914d\u4fe1\u3010TOP/ADC\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c825ec0f17021e280557_urs_toko_39563752247_1660228217//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c825ec0f17021e280557_urs_toko_39563752247_1660228217//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c825ec0f17021e280557_urs_toko_39563752247_1660228217//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c825ec0f17021e280557_urs_toko_39563752247_1660228217//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-11 14:30:24",
-                "lengthSeconds": 29842,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1558783274": {
-                "title": "\u3010RANK-S3\u3011\u226a\u6c42\u226b\u6bba\u610f\u3092\u6301\u3064\u65b9\u6cd5\u226a\u51fa\u226b\u6bba\u610f\u3092\u5ba5\u3081\u308b\u914d\u4fe1\u3010TOP/ADC\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/aab266caf6806d560abe_urs_toko_39563409911_1660222667//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/aab266caf6806d560abe_urs_toko_39563409911_1660222667//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/aab266caf6806d560abe_urs_toko_39563409911_1660222667//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/aab266caf6806d560abe_urs_toko_39563409911_1660222667//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-11 12:57:54",
-                "lengthSeconds": 5524,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1555707233": {
-                "title": "\u3010\u5897\u30a2\u30ab\u3011\u751f\u5f92\u306b\u547c\u3070\u308c\u3061\u3083\u3044\u304b\u306a\u3044\u3068\u3010\u30ce\u30de\u30eb\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ead0863b84386b4a740f_urs_toko_39553942391_1659938684//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ead0863b84386b4a740f_urs_toko_39553942391_1659938684//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ead0863b84386b4a740f_urs_toko_39553942391_1659938684//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ead0863b84386b4a740f_urs_toko_39553942391_1659938684//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-08 06:04:50",
-                "lengthSeconds": 32832,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1554514759": {
-                "title": "\u3010LOL\u3011\u8840\u306e\u5473\u3092\u899a\u3048\u306b\u884c\u304f\u30b7\u30f3\u30ea\u30e3\u30af\u30b7\u30e3\ud83d\udc7e\u2026\u30aa\u30cf\u30e8\u30a6\u30bb\u30ab\u30a4\u2026\u3002",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5f162370cfec30c7d73a_urs_toko_39550637799_1659831597//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5f162370cfec30c7d73a_urs_toko_39550637799_1659831597//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5f162370cfec30c7d73a_urs_toko_39550637799_1659831597//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5f162370cfec30c7d73a_urs_toko_39550637799_1659831597//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-07 00:20:04",
-                "lengthSeconds": 56264,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1552421201": {
-                "title": "\u3010LOL\u3011\u671d\u30c0\u30fc\u2600\u590f\u30c0\u30fc\u2600\u30b7\u30f3\u30ea\u30e3\u30af\u30c0\u30fc",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/969f85cae06b82f90bca_urs_toko_39544693431_1659648047//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/969f85cae06b82f90bca_urs_toko_39544693431_1659648047//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/969f85cae06b82f90bca_urs_toko_39544693431_1659648047//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/969f85cae06b82f90bca_urs_toko_39544693431_1659648047//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-04 21:20:54",
-                "lengthSeconds": 28358,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1549338529": {
-                "title": "\u3010RANK\u3011\u307b\u3093\u306e\u5c11\u3057\u9045\u304f\u8d77\u304d\u305f\u671d\u306f\u2600\u3010TOP/ADC\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1f819a9c6e928d635985_urs_toko_39536384359_1659378315//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1f819a9c6e928d635985_urs_toko_39536384359_1659378315//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1f819a9c6e928d635985_urs_toko_39536384359_1659378315//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1f819a9c6e928d635985_urs_toko_39536384359_1659378315//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-08-01 18:25:22",
-                "lengthSeconds": 38836,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1546230792": {
-                "title": "\u3010\u5897\u30a2\u30ab\u3011\u4e00\u7dd2\u306b\u30ce\u30fc\u30de\u30eb\ud83d\udc7e\u2728\u3010\u30ce\u30fc\u30de\u30eb\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/19ab8bc12b38b3c62793_urs_toko_39527346231_1659100012//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/19ab8bc12b38b3c62793_urs_toko_39527346231_1659100012//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/19ab8bc12b38b3c62793_urs_toko_39527346231_1659100012//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/19ab8bc12b38b3c62793_urs_toko_39527346231_1659100012//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-29 13:06:59",
-                "lengthSeconds": 39080,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1542256556": {
-                "title": "\u3010RANK\u3011\u624d\u80fd\u304c\u6b32\u3057\u3044\u304b\u2026\ud83d\udc7eSAY NO\u2753\u3010TOP/ADC\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/53a1d03d191acad56a2f_urs_toko_39516944647_1658754013//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/53a1d03d191acad56a2f_urs_toko_39516944647_1658754013//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/53a1d03d191acad56a2f_urs_toko_39516944647_1658754013//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/53a1d03d191acad56a2f_urs_toko_39516944647_1658754013//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-25 13:00:18",
-                "lengthSeconds": 43124,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1540275495": {
-                "title": "\u3010\u5897\u6c38\u30a2\u30ab\u30c7\u30df\u3011\u4e45\u3057\u3076\u308a\u306b\u305b\u3093\u305b\u3048\u3059\u308b\u307e\u3059\ud83d\udc7e\u3010\u5148\u751f\u67a0\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8524a45f992f7d82b3a7_urs_toko_39511321975_1658573900//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8524a45f992f7d82b3a7_urs_toko_39511321975_1658573900//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8524a45f992f7d82b3a7_urs_toko_39511321975_1658573900//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8524a45f992f7d82b3a7_urs_toko_39511321975_1658573900//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-23 10:58:27",
-                "lengthSeconds": 19768,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1538301335": {
-                "title": "\u3010\u30ce\u30fc\u30de\u30eb\u3011\u30a2\u30ab\u30c7\u30df\u30fcDE\u30ce\u30fc\u30de\u30eb\ud83d\udc7e\u3010\u30a2\u30ab\u30c7\u30df\ud83c\udfeb\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/03fef960fc33afbe8871_urs_toko_39506326583_1658404659//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/03fef960fc33afbe8871_urs_toko_39506326583_1658404659//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/03fef960fc33afbe8871_urs_toko_39506326583_1658404659//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/03fef960fc33afbe8871_urs_toko_39506326583_1658404659//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-21 11:57:46",
-                "lengthSeconds": 28562,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1535383124": {
-                "title": "\u3010Rank-S3\u3011\u5927\u5207\u306a\u306e\u306f\u30c1\u30e3\u30f3\u30d7\u3068\u5411\u304d\u5408\u3046\u4e8b\ud83d\udc7e\u3010Top/ADC\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/55100cb3537082d5d607_urs_toko_39498818263_1658152869//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/55100cb3537082d5d607_urs_toko_39498818263_1658152869//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/55100cb3537082d5d607_urs_toko_39498818263_1658152869//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/55100cb3537082d5d607_urs_toko_39498818263_1658152869//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-18 14:01:16",
-                "lengthSeconds": 51710,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1533600991": {
-                "title": "\u591c\u66f4\u304b\u3059\u30b7\u30f3\u30ea\u30e3\u30af\u30b7\u30e3\ud83d\udc7e\u6700\u521d\u4f5c\u696d\u3001\u306e\u3061\u3001\u30b7\u30e9\u30f3\u2755\u2755",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7420a5e46a9031a6be12_urs_toko_39493600743_1657988471//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7420a5e46a9031a6be12_urs_toko_39493600743_1657988471//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7420a5e46a9031a6be12_urs_toko_39493600743_1657988471//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7420a5e46a9031a6be12_urs_toko_39493600743_1657988471//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-16 16:21:18",
-                "lengthSeconds": 25356,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1530798462": {
-                "title": "\u3010\u591c\u66f4\u30ab\u30b9\u30bf\u30e0\u3011\u3053\u3063\u305d\u308a\u591c\u66f4\u304b\u3057\ud83c\udf10\u30ca\u30a4\u30b7\u30e7\u30c0\u30e8\ud83d\udc7e\u2728",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2726a8acfea8807e5ba2_urs_toko_39485361911_1657736480//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2726a8acfea8807e5ba2_urs_toko_39485361911_1657736480//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2726a8acfea8807e5ba2_urs_toko_39485361911_1657736480//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2726a8acfea8807e5ba2_urs_toko_39485361911_1657736480//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-13 18:21:27",
-                "lengthSeconds": 15048,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1529634074": {
-                "title": "\u3010RANK-S3\u3011\u305d\u30fc\u3081\u3093\u304c\u7121\u304f\u306a\u308b\u6642\u305d\u30fc\u3081\u3093\u304c\u88dc\u5145\u3055\u308c\u308b\u3010Top/ADC\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c9170c92be1383337d38_urs_toko_39482134679_1657633277//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c9170c92be1383337d38_urs_toko_39482134679_1657633277//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c9170c92be1383337d38_urs_toko_39482134679_1657633277//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c9170c92be1383337d38_urs_toko_39482134679_1657633277//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-12 13:41:24",
-                "lengthSeconds": 35368,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1527766034": {
-                "title": "\u3010RANK-S3\u3011\u4eca\u65e5\u3082\u304a\u75b2\u308c\u69d8\u30c7\u30b7\u30bf\ud83d\udc7e\u3010Top/ADC\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/197be5dc8cb8d0b9b6c5_urs_toko_39476941111_1657458435//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/197be5dc8cb8d0b9b6c5_urs_toko_39476941111_1657458435//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/197be5dc8cb8d0b9b6c5_urs_toko_39476941111_1657458435//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/197be5dc8cb8d0b9b6c5_urs_toko_39476941111_1657458435//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-10 13:07:22",
-                "lengthSeconds": 29096,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1524909569": {
-                "title": "\u3010\u8a18\u5ff5\u67a0\u3011URS\u5730\u7403\u4fb5\u7565\u4f5c\u6226\u5927\u4f1a\u8b70\uff5e\u4e03\u5915\u306e\u9663\uff5e\u3010\u4e03\u5915\ud83c\udf8b\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3fff0462851f00d65239_urs_toko_39468933319_1657198799//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3fff0462851f00d65239_urs_toko_39468933319_1657198799//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3fff0462851f00d65239_urs_toko_39468933319_1657198799//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3fff0462851f00d65239_urs_toko_39468933319_1657198799//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-07 13:00:06",
-                "lengthSeconds": 11232,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1524000824": {
-                "title": "\u3010\u30ce\u30fc\u30de\u30eb\u3011\u672c\u65e5\u306f\u304a\u3058\u3087\u3046\u3055\u307e\u308d\u308b\u3010\u30b2\u30b9\u30c8\u3042\u308a\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dc6ac7a16285dad144d2_urs_toko_39466701271_1657117373//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dc6ac7a16285dad144d2_urs_toko_39466701271_1657117373//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dc6ac7a16285dad144d2_urs_toko_39466701271_1657117373//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dc6ac7a16285dad144d2_urs_toko_39466701271_1657117373//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-06 14:23:00",
-                "lengthSeconds": 32102,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1522212957": {
-                "title": "\u3010\u591c\u66f4\u304b\u3057\u30ab\u30b9\u30bf\u30e0\u3011\u9042\u306b\u30b7\u30f3\u30ea\u30e3\u30af\u30b7\u30e3\u304c\u591c\u66f4\u304b\u3057\u30ab\u30b9\u30bf\u30e0\u306b\u2026\ud83d\udc7e\uff7c\u3001\uff7c\uff9d\uff98\uff6c\uff78\uff80\uff9e\uff70\u2026",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e56ef73b90df9fb4d26b_urs_toko_39461821863_1656950168//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e56ef73b90df9fb4d26b_urs_toko_39461821863_1656950168//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e56ef73b90df9fb4d26b_urs_toko_39461821863_1656950168//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e56ef73b90df9fb4d26b_urs_toko_39461821863_1656950168//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-04 15:56:15",
-                "lengthSeconds": 20170,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1521183581": {
-                "title": "\u3010\u30b3\u30bd\u7df4\u3011ADC\u731b\u7279\u8a13\u2026\ud83c\udf2a\u3010!member\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f89fa373843ba4462b48_urs_toko_39458539815_1656849524//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f89fa373843ba4462b48_urs_toko_39458539815_1656849524//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f89fa373843ba4462b48_urs_toko_39458539815_1656849524//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f89fa373843ba4462b48_urs_toko_39458539815_1656849524//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-03 11:58:51",
-                "lengthSeconds": 43386,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1519289217": {
-                "title": "\u3010\u5897\u30a2\u30ab\u30c7\u30df\u3011\u4eca\u65e5\u306f\u7686\u3092\u898b\u5b88\u308b\u30bb\u30a4\u30bb\u30a4\u2728\u30c0\u30be\u3010\u89b3\u6226\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5a73e0e24fb1f0450494_urs_toko_39452661735_1656673047//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5a73e0e24fb1f0450494_urs_toko_39452661735_1656673047//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5a73e0e24fb1f0450494_urs_toko_39452661735_1656673047//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5a73e0e24fb1f0450494_urs_toko_39452661735_1656673047//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-07-01 10:57:34",
-                "lengthSeconds": 30882,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1518602121": {
-                "title": "\u306a\u3044\u3057\u3087\u304f\u304a\u308f\u305f\u3002\u304a\u306f\u306a\u3057\u3057\u307e\u3059\u3093\u3002\u3010OFFLINE-mode\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/db75874f0e39f4e9928b_urs_toko_39451236775_1656611410//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/db75874f0e39f4e9928b_urs_toko_39451236775_1656611410//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/db75874f0e39f4e9928b_urs_toko_39451236775_1656611410//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/db75874f0e39f4e9928b_urs_toko_39451236775_1656611410//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-06-30 17:50:17",
-                "lengthSeconds": 15658,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1516382056": {
-                "title": "\u3010\u5897\u30a2\u30ab\u30c7\u30df\u3011\u30dd\u30f3\u30b3\u30c4TOP\u304c\u3070\u308c\u305f\u3089\u8ca0\u3051\ud83d\udc7e19:00\uff5e\u3010\u30ab\u30b9\u30bf\u30e0\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4fb2f291d6d523058214_urs_toko_39444766071_1656409638//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4fb2f291d6d523058214_urs_toko_39444766071_1656409638//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4fb2f291d6d523058214_urs_toko_39444766071_1656409638//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4fb2f291d6d523058214_urs_toko_39444766071_1656409638//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-06-28 09:47:23",
-                "lengthSeconds": 48572,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1514646845": {
-                "title": "\u3010RANK-S4\u3011\u3055\u3042\u3066\u3001\u30b5\u30e2\u30ea\u30d5\u6551\u3063\u3061\u3083\u3044\u307e\u3059\u304b\u3041\ud83d\udc7e\u3010Top/ADC\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a4e70d17638e2db14699_urs_toko_39440384231_1656248876//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a4e70d17638e2db14699_urs_toko_39440384231_1656248876//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a4e70d17638e2db14699_urs_toko_39440384231_1656248876//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a4e70d17638e2db14699_urs_toko_39440384231_1656248876//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-06-26 13:08:03",
-                "lengthSeconds": 32560,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
-            },
-            "1511828482": {
-                "title": "\u3010RANK-S4\u3011Sir to Yi no Her do\ud83d\udc7e\u3010Top/ADC\u3011",
-                "thumbnailURLs": [
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/13daae7410ca47bc30a0_urs_toko_39431993159_1655989444//thumb/thumb0-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/13daae7410ca47bc30a0_urs_toko_39431993159_1655989444//thumb/thumb1-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/13daae7410ca47bc30a0_urs_toko_39431993159_1655989444//thumb/thumb2-320x180.jpg",
-                    "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/13daae7410ca47bc30a0_urs_toko_39431993159_1655989444//thumb/thumb3-320x180.jpg"
-                ],
-                "createdAt": "2022-06-23 13:04:09",
-                "lengthSeconds": 32420,
-                "owner": {
-                    "displayName": "\u3068\u304a\u3053"
-                }
+                "description": "",
+                "created_at": "2022-08-17 11:31:48",
+                "published_at": "2022-08-17T11:31:48Z",
+                "url": "https://www.twitch.tv/videos/1564462081",
+                "thumbnail_url": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/82cb531d7a39b3199693_oh__dawn_39576923191_1660735903//thumb/thumb0-165x85.jpg",
+                "viewable": "public",
+                "view_count": 365,
+                "language": "ko",
+                "type": "archive",
+                "duration": "4h24m40s",
+                "muted_segments": null
             }
         }
     }

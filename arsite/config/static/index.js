@@ -156,17 +156,14 @@ function AddDownlist(downlist,incomplete,complete,metadata)
         listitem.setAttribute("id","downlist-item"+key);
         listitem.style.display = 'block';
         var thumbnail = listitem.querySelector("#thumbnail");
-        thumbnail.setAttribute('src',metadata[key]['thumbnailURLs'][0]);
+        thumbnail.setAttribute('src',metadata[key].thumbnail_url);
         thumbnail.setAttribute('width','150');
         var content = listitem.querySelector("#listitem-content");
 
-        var sec = (metadata[key].lengthSeconds % 60);
-        var min = Math.floor(metadata[key].lengthSeconds / 3600) % 60;
-        var hour = Math.floor(metadata[key].lengthSeconds / 3600);
         content.innerHTML = "<span style='font-weight:bold;'>Title: </span> " + metadata[key].title + " [" + key +"]" +"<br>" 
-                            + "<span style='font-weight:bold;'>Created: </span>" + metadata[key].createdAt + "<br>" 
-                            + "<span style='font-weight:bold;'>Streamer:</span> " + metadata[key].owner.displayName + "<br>"
-                            + "<span style='font-weight:bold;'>Length:</span> " + hour+":"+min+":"+sec;
+                            + "<span style='font-weight:bold;'>Created: </span>" + metadata[key].created_at + "<br>" 
+                            + "<span style='font-weight:bold;'>Streamer:</span> " + metadata[key].user_name + "<br>"
+                            + "<span style='font-weight:bold;'>Length:</span> " + metadata[key].duration
         var loading = listitem.querySelector("#progress");
         loading.setAttribute("id","progress"+key)
         loading.style.display = "block";
@@ -185,20 +182,17 @@ function AddDownlist(downlist,incomplete,complete,metadata)
         listitem.setAttribute("id","downlist-item"+key);
         listitem.style.display = 'block';
         var thumbnail = listitem.querySelector("#thumbnail");
-        thumbnail.setAttribute('src',metadata[key]['thumbnailURLs'][0]);
+        thumbnail.setAttribute('src',metadata[key].thumbnail_url);
         thumbnail.setAttribute('width','150');
         var content = listitem.querySelector("#listitem-content");
 
         var loading = listitem.getElementsByTagName("img")[1];
         loading.style.display = 'block';
 
-        var sec = (metadata[key].lengthSeconds % 60);
-        var min = Math.floor(metadata[key].lengthSeconds / 3600) % 60;
-        var hour = Math.floor(metadata[key].lengthSeconds / 3600);
         content.innerHTML = "<span style='font-weight:bold;'>Title: </span> " + metadata[key].title + " [" + key +"]" +"<br>" 
-                            + "<span style='font-weight:bold;'>Created: </span>" + metadata[key].createdAt + "<br>" 
-                            + "<span style='font-weight:bold;'>Streamer:</span> " + metadata[key].owner.displayName + "<br>"
-                            + "<span style='font-weight:bold;'>Length:</span> " + hour+":"+min+":"+sec;
+                            + "<span style='font-weight:bold;'>Created: </span>" + metadata[key].created_at + "<br>" 
+                            + "<span style='font-weight:bold;'>Streamer:</span> " + metadata[key].user_name + "<br>"
+                            + "<span style='font-weight:bold;'>Length:</span> " + metadata[key].duration
         downlist.appendChild(listitem);
     }
 }
@@ -217,47 +211,22 @@ function Apply(event){
     loading.style.display = "inline-block";
     if(cname.getAttribute('readonly') == null)
     {
-        //channel name validation
         $.ajax({
-            url: "validate_channel",
-            data : {"channel_name" : cname.value, "i" : n},
+            url: "register",
+            data: {"channel_name" : cname.value, "oauth" : oauth.value, "i": n},
             method: "POST",
             dataType: "json",
             async : true,
             success : function(data){
-                if(data.valid == true)
+                document.getElementById("loading"+data.i).style.display = "none";  
+                if(data.state != 'ok')
                 {
-                    //channel register
-                    $.ajax({
-                        url: "register",
-                        data: {"channel_name" : cname.value, "oauth" : oauth.value, "i": data.i},
-                        method: "POST",
-                        dataType: "json",
-                        async : true,
-                        success : function(data){
-                            document.getElementById("loading"+data.i).style.display = "none";  
-                            if(data.valid == false)
-                            {
-                                alert("channel name already exists");
-                            }
-                            else
-                            {
-                                document.getElementById("cname"+data.i).setAttribute("readonly",true);
-                                Load(data.channel,document.getElementById("item"+data.i));
-                            }
-                        },
-                        error: function (request, status, error){
-                            console.log('request ' + request);
-                            console.log('status ' + status);
-                            console.log('error ' + error);
-                        }
-                    });
+                    alert(data.state);
                 }
                 else
                 {
-                    alert("wrong channel name");
-                    document.getElementById("loading"+data.i).style.display = "none";
-                    document.getElementById("apply"+data.i).removeAttribute("disabled");
+                    document.getElementById("cname"+data.i).setAttribute("readonly",true);
+                    Load(data.channel,document.getElementById("item"+data.i));
                 }
             },
             error: function (request, status, error){

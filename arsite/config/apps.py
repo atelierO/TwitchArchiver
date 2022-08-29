@@ -4,11 +4,6 @@ import threading, os, time, json, subprocess
 
 from datetime import datetime
 
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
 import re, requests, atexit, sys
 
 from queue import Queue, Empty
@@ -18,17 +13,55 @@ class ConfigConfig(AppConfig):
     name = 'config'
 
 
+class TwitchAPI:
+    def __init__(self):
+        self.client_id = '1t9vvxky42jpt49f4fake3lyfjn9t7'
+        self.access_token = ''
+        self.token_release = 0
+        self.get_accesstoken()
+
+    def get_accesstoken(self):
+        headers = {
+            "Content-Type": "application/x-www-form-urlencoded",
+        }
+        data = {
+            'client_id' : self.client_id,
+            'client_secret' : 'l7bp028uwsyxyoiiixbyilyshm7m64',
+            'grant_type' : 'client_credentials'
+        }
+        res = requests.post('https://id.twitch.tv/oauth2/token', headers=headers, data=data)
+        self.token_release = datetime.now()
+        self.access_token = res.json()['access_token']
+    
+
+
+    def get_channel_video_data(self, username):
+        headers = {
+            "Authorization" :  'Bearer ' + self.access_token,
+            "Client-Id" : self.client_id
+        }
+        res = requests.get('https://api.twitch.tv/helix/users?login='+username, headers=headers)
+        if len(res.json()['data']) == 0:
+            return False
+        user_id = res.json()['data'][0]['id']
+
+        headers = {
+            "Authorization" : "Bearer " + self.access_token,
+            "Client-Id" : self.client_id
+        }
+        res = requests.get('https://api.twitch.tv/helix/videos?user_id=' + user_id, headers=headers)
+        return res.json()['data']
 
 
 class DownloadManager(threading.Thread):
-    def __init__(self,driver):
+    def __init__(self):
         threading.Thread.__init__(self) 
-        self.driver = driver
         self.load()
         self.download_threads = {}
+        self.twitch_api = TwitchAPI()
 
-    def __del__(self):
-        self.driver.close()
+    # def __del__(self):
+    #     self.driver.close()
 
     def run(self):
         while True:
@@ -72,7 +105,7 @@ class DownloadManager(threading.Thread):
 
     def add(self, cname, oauth):
         if cname in self.channels:
-            return False
+            return 'duplicate'
         channel = {}
         channel['cname'] = cname
         channel['oauth'] = oauth
@@ -84,10 +117,11 @@ class DownloadManager(threading.Thread):
         channel['incomplete'] = []
         channel['metadata'] = {}
         self.channels[cname] = channel
-        self.check(channel)
+        if self.check(channel) == False:
+            return 'not valid'
         self.reconfig(channel)
         self.save()
-        return True
+        return 'ok'
     
     def delete(self, cname):
         del self.channels[cname]
@@ -105,15 +139,11 @@ class DownloadManager(threading.Thread):
         return self.channels[cname]
 
     def check(self, channel):
-        self.driver.get('https://www.twitch.tv/'+channel['cname']+'/videos?filter=archives&sort=time')
-        WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH,'//a[@data-a-target="preview-card-image-link"]')))
-        video_link_elements = self.driver.find_elements(By.XPATH,'//a[@data-a-target="preview-card-image-link"]')
-        p = re.compile("(?<=videos/)[0-9]+")
-
-        for ele in video_link_elements:
-            link = ele.get_attribute('href')
-            vcode = p.search(link).group()
-
+        video_data = self.twitch_api.get_channel_video_data(channel['cname'])
+        if video_data == False:
+            return False
+        for metadata in video_data:
+            vcode = metadata['id']
             duplicate = False
             for ccode in channel['complete']:
                 if ccode == vcode:
@@ -122,13 +152,13 @@ class DownloadManager(threading.Thread):
             if duplicate == True:
                 continue
 
-            headers = {"Client-ID": "kimne78kx3ncx6brgo4mv6wki5h1ko",}
-            params = {"query":'query{video(id:"'+vcode+'"){title,thumbnailURLs(height:180,width:320),createdAt,lengthSeconds,owner{displayName}}}'}
-            response = requests.post("https://gql.twitch.tv/gql", data=json.dumps([params]), headers = headers) 
-            metadata = response.json()[0]["data"]["video"]
-            metadata['createdAt'] = datetime.strptime(metadata['createdAt'],"%Y-%m-%dT%H:%M:%SZ").strftime('%Y-%m-%d %H:%M:%S')
-            channel['metadata'][vcode] = metadata
-            channel['incomplete'].append(vcode)
+            if metadata['type'] == 'archive':
+                m = re.compile("%{width}x%{height}").search(metadata['thumbnail_url'])
+                metadata['thumbnail_url'] = metadata['thumbnail_url'][0:m.start()] + '165x85' + metadata['thumbnail_url'][m.end():len(metadata['thumbnail_url'])]
+                metadata['created_at'] =  datetime.strptime(metadata['created_at'],"%Y-%m-%dT%H:%M:%SZ").strftime('%Y-%m-%d %H:%M:%S')
+                channel['metadata'][vcode] = metadata
+                channel['incomplete'].append(vcode)
+        return True
 
     def download(self, cname):
         channel = self.channels[cname]
@@ -169,8 +199,8 @@ class DownloadManager(threading.Thread):
                 os.mkdir('./download')
             if os.path.isdir(download_path) == False:
                 os.mkdir(download_path)
-            vdate = datetime.strptime(channel['metadata'][vcode]['createdAt'],"%Y-%m-%d %H:%M:%S").strftime('%Y-%m-%d')
-            download_path = download_path + '/[' + vdate + '] ' + channel['metadata'][vcode]['owner']['displayName'] + ' - ' + channel['metadata'][vcode]['title'] + ' (' + vcode +').mp4'
+            vdate = datetime.strptime(channel['metadata'][vcode]['created_at'],"%Y-%m-%d %H:%M:%S").strftime('%Y-%m-%d')
+            download_path = download_path + '/[' + vdate + '] ' + channel['metadata'][vcode]['user_name'] + ' - ' + channel['metadata'][vcode]['title'] + ' (' + vcode +').mp4'
             runner = ['./TwitchDownloaderCLI', '-m','VideoDownload','-q','1080p60','-o',download_path,'--ffmpeg-path','./ffmpeg','-u',vcode]
             print(' '.join(runner))
             if channel['oauth'] != '':
