@@ -12,16 +12,14 @@ COPY ./source .
 RUN pip install --upgrade pip \
 	&& pip install django requests 
 
-#dotnet 다운
+# dotnet 다운
 # RUN wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
 # 	&& dpkg --purge packages-microsoft-prod && dpkg -i packages-microsoft-prod.deb\
 # 	&& apt-get update \
 # 	&& dpkg -i packages-microsoft-prod.deb \
 # 	&& rm packages-microsoft-prod.deb \
 #     && apt-get install -y aspnetcore-runtime-6.0 \
-# 	&& (./TwitchDownloaderCLI --download-ffmpeg || true)
-
-RUN ./TwitchDownloaderCLI --download--ffmpeg || true
+RUN (./TwitchDownloaderCLI --download-ffmpeg || true)
 
 CMD python3 arsite/manage.py runserver 0.0.0.0:8000 --insecure
 
