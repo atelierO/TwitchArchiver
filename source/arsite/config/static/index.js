@@ -320,13 +320,16 @@ function Delete(event){
             method: "POST",
             dataType: "json",
             async : true,
+            success : function(data){
+                GetSiteState();
+            }
     });
 }
 
 function GetSiteState(){
     $.ajax({
         url: "download_state",
-        data : {"channel_names" : Object.keys(channels)},
+        // data : {"channel_names" : Object.keys(channels)},
         method: "POST",
         dataType: "json",
         async : true,

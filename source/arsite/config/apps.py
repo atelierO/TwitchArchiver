@@ -219,7 +219,7 @@ class DownloadManager(threading.Thread):
                 break
             channel['working']['progress'] = '100%'
             channel['last-download'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            channel['incomplete'].remove(0)
+            channel['incomplete'].remove(vcode)
             channel['complete'].append(vcode)
         channel['running'] = False
         self.save()

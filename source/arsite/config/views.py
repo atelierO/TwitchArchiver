@@ -56,7 +56,8 @@ def download_state(request):
     global manager
     if request.method == "POST":
         states = []
-        for cname in request.POST.getlist('channel_names[]'):
+        # for cname in request.POST.getlist('channel_names[]'):
+        for cname in manager.getinfo_all():
             states.append(manager.get_download_state(cname))
         return HttpResponse(json.dumps({'states': states}), content_type='application/json')
     return HttpResponseBadRequest('Not permitted access')
