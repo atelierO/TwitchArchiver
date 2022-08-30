@@ -27,10 +27,15 @@ Docker
 ---
 [[TwitchArchiver for docker](https://hub.docker.com/r/beatheat/twitch-archiver)]   
 This project is written by python:3.8.10 debian linux version of docker. You can check version and install with link above.   
-if you install with docker-compose use code below.   
 
 이 프로젝트는 도커의 python:3.8.10 debian linux 버전을 이용해 작성했습니다. 위 링크를 통해 버전 확인 및 도커 설치가 가능합니다.   
-docker-compose를 이용할 시 아래 코드를 이용해주세요.
+
+### Docker Run
+```
+sudo docker run -d  -p 8000:8000 -v /my_video:/download --restart=unless-stopped  beatheat/twitch-archiver
+```
+
+### Docker Compose
 ```
 version: '3'
 name : twitch-archiver
@@ -43,8 +48,12 @@ services:
       - (your volume here):/download
     restart: unless-stopped
 ```
-inner server port : 8000   
-/download : directory for videos downloaded 
+### Port
+inner server port : 8000      
+내부 서버 포트 : 8000
+### Volume
+/download : directory for videos downloaded    
+/download : 비디오가 다운로드 될 경로
 
 
 Things still to be done
@@ -57,3 +66,5 @@ Reference
 ---
 - Downloads videos by TwitchDonwloaderCLI 1.40.7 of lay295 (https://github.com/lay295/TwitchDownloader)   
 - lay295님의 TwitchDownloaderCLI 1.40.7을 이용하여 영상을 다운받습니다. (https://github.com/lay295/TwitchDownloader)   
+
+
