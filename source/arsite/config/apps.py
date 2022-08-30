@@ -147,7 +147,7 @@ class DownloadManager(threading.Thread):
             if duplicate == True:
                 continue
 
-            if metadata['type'] == 'archive':
+            if metadata['type'] == 'archive' and vcode not in channel['metadata']:
                 m = re.compile("%{width}x%{height}").search(metadata['thumbnail_url'])
                 metadata['thumbnail_url'] = metadata['thumbnail_url'][0:m.start()] + '160x90' + metadata['thumbnail_url'][m.end():len(metadata['thumbnail_url'])]
                 metadata['created_at'] =  datetime.strptime(metadata['created_at'],"%Y-%m-%dT%H:%M:%SZ").strftime('%Y-%m-%d %H:%M:%S')
@@ -166,7 +166,10 @@ class DownloadManager(threading.Thread):
         self.download_threads[cname]['queue'] = Queue()
 
         thread.start()
-    
+
+    def get_download_state(self, cname):
+        return self.channels[cname]['working']
+
     def download_state_thread(self,channel,out):
         p = re.compile("[0-9]+%")
         while channel['running'] and channel['working']['progress'] != '100%':
@@ -177,8 +180,6 @@ class DownloadManager(threading.Thread):
                 if content.group() == "100%":
                     return
 
-    def get_download_state(self, cname):
-        return self.channels[cname]['working']
 
     def download_thread(self,channel):
         channel['running'] = True

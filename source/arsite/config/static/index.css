@@ -68,6 +68,7 @@ header{
     width:50px;
     height: 23px;
     vertical-align: top;
+    margin-top: 2px;
 }
 .right-btn:hover{
     cursor: pointer;
@@ -81,6 +82,8 @@ header{
     background-color: #4f4;
     color: white;
     height: 45px;
+    margin-top: 2px;
+
 }
 .toggle-up:hover{
     cursor: pointer;

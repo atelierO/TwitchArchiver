@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     LoadAll();
-    state_interval_id = setInterval(GetSiteState, 10000);
+    state_interval_id = setInterval(GetSiteState, 5000);
 });
 
 
@@ -56,6 +56,7 @@ function Load(channel, replace_item)
 {
     var item = document.getElementById("item-prototype").cloneNode(true);
     item.setAttribute("id","item"+counter);
+    item.value = counter;
 
     var cname = item.querySelector("#cname")
     cname.setAttribute("id","cname"+counter);
@@ -77,6 +78,7 @@ function Load(channel, replace_item)
     //여기 complete로 바꾸기
     AddDownlist(downlist,channel['incomplete'],channel['complete'],channel['metadata']);
     var info = item.querySelector("#info");
+    info.setAttribute("id","info"+counter);
     info.innerHTML = "Latest Download Time : <span style='font-weight: bold;color: #00c;'>" + channel['last-download'] +"</span>"
         + "  State : <span style='font-weight: bold;color: " + (channel['running']?"#c00;'>Downloading...":"#0d0;'> Idle") + "</.span>";
 
@@ -157,7 +159,6 @@ function AddDownlist(downlist,incomplete,complete,metadata)
         listitem.style.display = 'block';
         var thumbnail = listitem.querySelector("#thumbnail");
         thumbnail.setAttribute('src',metadata[key].thumbnail_url);
-        thumbnail.setAttribute('width','150');
         var content = listitem.querySelector("#listitem-content");
 
         content.innerHTML = "<span style='font-weight:bold;'>Title: </span> " + metadata[key].title + " [" + key +"]" +"<br>" 
@@ -288,7 +289,7 @@ function SyncToggle(event){
         data : {"channel_name" : cname.value, "toggle": event.target.innerText == "ON"},
         method: "POST",
         dataType: "json",
-        async : true
+        async : true,
     });
 }
 
@@ -348,6 +349,11 @@ function GetSiteState(){
                         progress.nextElementSibling.style.display = "block"               
                     }
                     progress.value = working.vcode;
+                    //state 변경
+                    var n = progress.closest(".item").value;
+                    var state = document.getElementById("info"+n).children[1];
+                    state.style.color = "#c00";
+                    state.innerText = "Downloading...";
                 }
             }
         }
