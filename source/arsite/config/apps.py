@@ -197,7 +197,7 @@ class DownloadManager(threading.Thread):
                 os.mkdir(download_path)
             vdate = datetime.strptime(channel['metadata'][vcode]['created_at'],"%Y-%m-%d %H:%M:%S").strftime('%Y-%m-%d')
             download_path = download_path + '/[' + vdate + '] ' + channel['metadata'][vcode]['user_name'] + ' - ' + channel['metadata'][vcode]['title'] + ' (' + vcode +').mp4'
-            runner = ['./TwitchDownloaderCLI', '-m','VideoDownload','-q','1080p60','-o',download_path,'--ffmpeg-path','./ffmpeg','-u',vcode]
+            runner = ['./TwitchDownloaderCLI', '-m','VideoDownload','-q','1080p60','-t','2','-o',download_path,'--ffmpeg-path','./ffmpeg','-u',vcode]
             print(' '.join(runner))
             if channel['oauth'] != '':
                 runner.append('--oauth')
