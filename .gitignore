@@ -3,3 +3,4 @@ source/ffprobe
 source/TwitchDownloaderCLI
 source/download/
 source/version.json
+docker-compose.yml
