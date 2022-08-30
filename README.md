@@ -62,6 +62,7 @@ Things still to be done
 - OAuth 조사 및 expire될 가능성 고려
 - OFF 클릭시 화면 리프레쉬
 - NAS말고 일반 PC 클라용 개발
+- 최초 로딩시 다운받고 있는 퍼센티지 같이 로딩
 
 Reference
 ---
