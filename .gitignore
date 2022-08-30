@@ -1,3 +1,5 @@
-ffmpeg
-ffprobe
-download/
+source/ffmpeg
+source/ffprobe
+source/TwitchDownloaderCLI
+source/download/
+source/version.json
