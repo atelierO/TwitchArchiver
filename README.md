@@ -32,7 +32,7 @@ This project is written by python:3.8.10 debian linux version of docker. You can
 
 ### Docker Run
 ```
-sudo docker run -d  -p 8000:8000 -v /my_video:/download --restart=unless-stopped  beatheat/twitch-archiver
+sudo docker run -d  -p 8000:8000 -v /my_video:/app/download --restart=unless-stopped  beatheat/twitch-archiver
 ```
 
 ### Docker Compose
@@ -45,15 +45,15 @@ services:
     ports:
       - (your port here):8000
     volumes:
-      - (your volume here):/download
+      - (your volume here):/app/download
     restart: unless-stopped
 ```
 ### Port
 inner server port : 8000      
 내부 서버 포트 : 8000
 ### Volume
-/download : directory for videos downloaded    
-/download : 비디오가 다운로드 될 경로
+/app/download : directory for videos downloaded    
+/app/download : 비디오가 다운로드 될 경로
 
 
 Things still to be done
