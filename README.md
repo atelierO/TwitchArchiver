@@ -61,6 +61,7 @@ Things still to be done
 - 채널 incomplete 메타데이터가 트위치 서버의 정보보다 오래되었을때 해당 데이터 삭제
 - OAuth 조사 및 expire될 가능성 고려
 - OFF 클릭시 화면 리프레쉬
+- NAS말고 일반 PC 클라용 개발
 
 Reference
 ---
