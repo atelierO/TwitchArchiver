@@ -63,6 +63,7 @@ Things still to be done
 - OFF 클릭시 화면 리프레쉬
 - NAS말고 일반 PC 클라용 개발
 - 최초 로딩시 다운받고 있는 퍼센티지 같이 로딩
+- 전부 다운받으면 off로 바뀌는 버그
 
 Reference
 ---
