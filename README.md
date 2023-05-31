@@ -1,4 +1,4 @@
-# TwitchArchiver[BETA] ![apm](https://img.shields.io/apm/l/vim-mode.svg)
+# TwitchArchiver[BETA] ![apm](https://img.shields.io/badge/license-MIT-green)
 - Twitch channel archive automatic downloader. Project is now developing and you can access beta version   
 
 - 트위치 채널에 올라오는 아카이브 영상을 자동으로 다운받습니다. 현재 개발중이며 베타 버전을 사용할 수 있습니다   
